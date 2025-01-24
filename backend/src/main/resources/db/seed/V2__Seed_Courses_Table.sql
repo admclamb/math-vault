@@ -1,0 +1,1 @@
+INSERT INTO courses (id, name) VALUES (uuid_generate_v4(), 'Elementary Math');
