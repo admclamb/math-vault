@@ -27,7 +27,8 @@
         </tr>
         <tr
           *ngFor="let course of courses"
-          class="bg-white border-b dark:bg-slate-800 dark:border-slate-700 border-slate-200"
+          class="bg-white border-b dark:bg-slate-800 dark:border-slate-700 border-slate-200 hover:cursor-pointer"
+          (click)="redirectToCourse(course.name)"
         >
           <th
             scope="row"
