@@ -18,7 +18,6 @@ export class HomeCoursesTableComponent implements OnInit {
 
   ngOnInit(): void {
     this.homeService.getCourses().subscribe((data: Course[]) => {
-      console.log('DATA: ', data);
       this.courses = data as any[];
     });
   }
