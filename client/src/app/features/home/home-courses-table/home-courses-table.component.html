@@ -17,18 +17,29 @@
         </tr>
       </thead>
       <tbody>
-        <!-- <tr
+        <tr
+          *ngIf="!courses.length"
+          class="bg-white border-b dark:bg-slate-800 dark:border-slate-700 border-slate-200"
+        >
+          <td colspan="3" class="px-6 py-4 text-center">
+            No courses available
+          </td>
+        </tr>
+        <tr
+          *ngFor="let course of courses"
           class="bg-white border-b dark:bg-slate-800 dark:border-slate-700 border-slate-200"
         >
           <th
             scope="row"
             class="px-6 py-4 font-medium text-slate-900 whitespace-nowrap dark:text-white"
           >
-            Apple MacBook Pro 17"
+            {{ course.name }}
           </th>
-          <td class="px-6 py-4">Silver</td>
-          <td class="px-6 py-4">Laptop</td>      
-        </tr> -->
+          <td class="px-6 py-4">
+            {{ formatTopicsToString(course.topics) }}
+          </td>
+          <td class="px-6 py-4">{{ formatDate(course.createdAt) }}</td>
+        </tr>
       </tbody>
     </table>
   </div>

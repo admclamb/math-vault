@@ -2,10 +2,12 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.3.6-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.1.6'
+	id 'org.flywaydb.flyway' version '8.0.0'
 }
 
 group = 'com.mathvault'
 version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
 
 java {
 	toolchain {
@@ -45,4 +47,23 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+file('.env').readLines().each { line ->
+    if (!line.isEmpty() && !line.startsWith("#")) {
+        def pos = line.indexOf("=")
+        def key = line.substring(0, pos)
+        def value = line.substring(pos + 1)
+
+        if (System.getenv(key) == null) {
+            project.ext[key] = value
+        }
+    }
+}
+
+flyway {
+    url = project.ext['DATABASE_URL']
+    user = project.ext['DATABASE_USERNAME']
+    password = project.ext['DATABASE_PASSWORD']
+    schemas = ['public']
 }

@@ -1,5 +1,6 @@
 package com.mathvault.backend.course.infrastructure.entities;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -29,4 +30,7 @@ public class CourseEntity {
     @ManyToMany
     @JoinTable(name = "course_topics", joinColumns = @JoinColumn(name = "course_id"), inverseJoinColumns = @JoinColumn(name = "topic_id"))
     private List<TopicEntity> topics;
+
+    @Column(name = "created_at", nullable = false)
+    private LocalDateTime createdAt;
 }
