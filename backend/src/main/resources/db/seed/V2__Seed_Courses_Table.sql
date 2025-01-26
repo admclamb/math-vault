@@ -1,1 +1,1 @@
-INSERT INTO courses (id, name) VALUES (uuid_generate_v4(), 'Elementary Math');
+INSERT INTO courses (id, name, description) VALUES (uuid_generate_v4(), 'Elementary Math', 'Covers the basics of arithmetic, fractions, and decimals. Perfect for building a solid foundation and confidence in essential math skills.');

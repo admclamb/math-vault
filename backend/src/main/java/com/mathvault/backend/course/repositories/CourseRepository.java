@@ -1,5 +1,6 @@
 package com.mathvault.backend.course.repositories;
 
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -9,5 +10,5 @@ import com.mathvault.backend.course.infrastructure.entities.CourseEntity;
 
 @Repository
 public interface CourseRepository extends JpaRepository<CourseEntity, UUID> {
-
+    Optional<CourseEntity> findByName(String name);
 }

@@ -1,1 +1,16 @@
-<p>course works!</p>
+<app-layout>
+  <div class="max-w-5xl mx-auto">
+    <div *ngIf="isLoading">
+      <app-page-loader />
+    </div>
+    <div
+      *ngIf="error && !isLoading"
+      class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-slate-800 dark:text-red-400"
+      role="alert"
+    >
+      <span class="font-medium mr-2">Danger alert!</span>
+      <span>{{ error.message }}</span>
+    </div>
+    <app-course-info *ngIf="course" [course]="course" />
+  </div>
+</app-layout>

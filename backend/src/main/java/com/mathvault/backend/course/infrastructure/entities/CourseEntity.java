@@ -27,6 +27,9 @@ public class CourseEntity {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
+    @Column(name = "description", nullable = false)
+    private String description;
+
     @ManyToMany
     @JoinTable(name = "course_topics", joinColumns = @JoinColumn(name = "course_id"), inverseJoinColumns = @JoinColumn(name = "topic_id"))
     private List<TopicEntity> topics;
