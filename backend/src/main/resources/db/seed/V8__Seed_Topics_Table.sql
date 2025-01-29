@@ -1,0 +1,12 @@
+INSERT INTO topics (id, name, placement) VALUES ('19853530-754d-41c9-ad60-3c314abc8518', 'Single-digit Addition', 1);
+INSERT INTO topics (id, name, placement) VALUES ('75854766-0204-4d66-8b39-f718762105db', 'Multi-digit Addition', 2);
+INSERT INTO topics (id, name, placement) VALUES ('c2cb037f-def6-4103-90c1-597805ea71e3', 'Single-digit Subtraction', 3);
+INSERT INTO topics (id, name, placement) VALUES ('0bce71c7-a6a5-41d5-86a4-b4aeaff29f1f', 'Multi-digit Subtraction', 4);
+INSERT INTO topics (id, name, placement) VALUES ('611d1604-2e4f-46ab-a6b3-aef477415804', 'Single-digit Multiplication', 5);
+INSERT INTO topics (id, name, placement) VALUES ('d0f708a2-f574-49be-bb33-3d550d0028f0', 'Multi-digit Multiplication', 6);
+INSERT INTO topics (id, name, placement) VALUES ('b82ae51e-cda4-465f-a2d0-a674e1543d61', 'Single-digit Division', 7);
+INSERT INTO topics (id, name, placement) VALUES ('d63147cd-101c-4dec-ba3e-f6e3a13b4507', 'Multi-digit Division', 8);
+INSERT INTO topics (id, name, placement) VALUES ('54c86fa1-a8c7-4f15-b978-d5fb5c85b3ab', 'Counting by Ones', 9);
+INSERT INTO topics (id, name, placement) VALUES ('55c87fa7-db16-4803-b8f8-985cff0b36a7', 'Counting by Twos', 10);
+INSERT INTO topics (id, name, placement) VALUES ('739751b4-8a56-4127-9335-7969987774c9', 'Counting by Fives', 11);
+INSERT INTO topics (id, name, placement) VALUES ('f5bcb6a5-470d-4c5a-8c15-ca0c9bd83e68', 'Counting by Tens', 12);

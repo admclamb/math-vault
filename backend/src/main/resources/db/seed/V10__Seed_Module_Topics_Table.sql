@@ -1,0 +1,14 @@
+INSERT INTO module_topics (module_id, topic_id)
+VALUES
+    ('44aa7940-9682-47dd-91f3-ce08ea13ff8b', '19853530-754d-41c9-ad60-3c314abc8518'),
+    ('44aa7940-9682-47dd-91f3-ce08ea13ff8b', '75854766-0204-4d66-8b39-f718762105db'),
+    ('fe75d0f5-9332-4825-b392-fb901a8fadae', 'c2cb037f-def6-4103-90c1-597805ea71e3'),
+    ('fe75d0f5-9332-4825-b392-fb901a8fadae', '0bce71c7-a6a5-41d5-86a4-b4aeaff29f1f'),
+    ('c5548e89-9dc1-486e-8062-a6077c2eee45', '611d1604-2e4f-46ab-a6b3-aef477415804'),
+    ('c5548e89-9dc1-486e-8062-a6077c2eee45', 'd0f708a2-f574-49be-bb33-3d550d0028f0'),
+    ('c293c18f-5833-4762-8f3c-4d94a09780dd', 'b82ae51e-cda4-465f-a2d0-a674e1543d61'),
+    ('c293c18f-5833-4762-8f3c-4d94a09780dd', 'd63147cd-101c-4dec-ba3e-f6e3a13b4507'),
+    ('8e7577d4-f7d4-4f0d-a1b2-eaa74548be5f', '54c86fa1-a8c7-4f15-b978-d5fb5c85b3ab'),
+    ('8e7577d4-f7d4-4f0d-a1b2-eaa74548be5f', '55c87fa7-db16-4803-b8f8-985cff0b36a7'),
+    ('8e7577d4-f7d4-4f0d-a1b2-eaa74548be5f', '739751b4-8a56-4127-9335-7969987774c9'),
+    ('8e7577d4-f7d4-4f0d-a1b2-eaa74548be5f', 'f5bcb6a5-470d-4c5a-8c15-ca0c9bd83e68');

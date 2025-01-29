@@ -1,5 +1,0 @@
-INSERT INTO course_topics (course_id, topic_id) VALUES ((SELECT id FROM courses WHERE name = 'Elementary Math'), (SELECT id FROM topics WHERE name = 'Addition'));
-INSERT INTO course_topics (course_id, topic_id) VALUES ((SELECT id FROM courses WHERE name = 'Elementary Math'), (SELECT id FROM topics WHERE name = 'Subtraction'));
-INSERT INTO course_topics (course_id, topic_id) VALUES ((SELECT id FROM courses WHERE name = 'Elementary Math'), (SELECT id FROM topics WHERE name = 'Multiplication'));
-INSERT INTO course_topics (course_id, topic_id) VALUES ((SELECT id FROM courses WHERE name = 'Elementary Math'), (SELECT id FROM topics WHERE name = 'Division'));
-INSERT INTO course_topics (course_id, topic_id) VALUES ((SELECT id FROM courses WHERE name = 'Elementary Math'), (SELECT id FROM topics WHERE name = 'Counting'));
