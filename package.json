@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cd ./client && npm start",
     "migrate:delete": "./backend/gradlew -p backend flywayClean",
-    "migrate:migrate": "./backend/gradlew -p backend flywayMigrate",
+    "migrate": "./backend/gradlew -p backend flywayMigrate",
     "migrate:info": "./backend/gradlew -p backend flywayInfo"
   },
   "keywords": [],

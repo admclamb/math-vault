@@ -1,0 +1,6 @@
+INSERT INTO course_tags (course_id, tag_id) VALUES
+('c72a8539-4aca-4de5-91f6-600633537c05','cdef56dc-f74e-4da0-ab2f-eec7e92cc697'),
+('c72a8539-4aca-4de5-91f6-600633537c05','317abbca-c0f6-4513-be74-ae8a40731d2f'),
+('c72a8539-4aca-4de5-91f6-600633537c05','6d3eecbc-ed73-4191-b9a8-77f39fb0b21c'),
+('c72a8539-4aca-4de5-91f6-600633537c05','e74729e8-9233-4a34-89a8-6349741e0ea8'),
+('c72a8539-4aca-4de5-91f6-600633537c05','db92483b-230d-42d5-9a0d-18ba629a1a53');

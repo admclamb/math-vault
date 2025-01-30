@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Topic } from '../../course/topic';
 import dayjs from 'dayjs';
 import { Router } from '@angular/router';
+import { Tag } from '../../course/tag';
 
 @Component({
   selector: 'app-home-courses-table',
@@ -23,8 +24,8 @@ export class HomeCoursesTableComponent implements OnInit {
     });
   }
 
-  formatTopicsToString(topics: Topic[]): string {
-    return topics.map((topic) => topic.name).join(', ');
+  formatTagsToString(tags: Tag[]): string {
+    return tags.map((tag) => tag.name).join(', ');
   }
 
   formatDate(date: Date): string {

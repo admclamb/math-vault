@@ -18,15 +18,16 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "topics")
-public class TopicEntity extends BaseEntity {
+@Table(name = "tags")
+public class TagEntity extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, unique = true)
     private String name;
 
-    @ManyToMany(mappedBy = "topics")
-    private List<ModuleEntity> modules;
+    @ManyToMany(mappedBy = "tags")
+    private List<CourseEntity> courses;
 }
