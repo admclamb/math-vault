@@ -4,7 +4,7 @@ import com.mathvault.backend.course.dto.GetAllCoursesResponseDto;
 import com.mathvault.backend.course.dto.TopicDto;
 import com.mathvault.backend.course.dto.response.GetCourseByNameResponseDto;
 import com.mathvault.backend.course.services.CourseService;
-import com.mathvault.backend.course.infrastructure.entities.CourseEntity;
+import com.mathvault.backend.db.CourseEntity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

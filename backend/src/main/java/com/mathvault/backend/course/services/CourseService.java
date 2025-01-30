@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mathvault.backend.course.infrastructure.entities.CourseEntity;
 import com.mathvault.backend.course.repositories.CourseRepository;
+import com.mathvault.backend.db.CourseEntity;
 
 @Service
 public class CourseService implements ICourseService {

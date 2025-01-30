@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm start --prefix client\" \"./backend/gradlew -p backend BootRun\"",
+    "start": "cd ./client && npm start",
     "migrate:delete": "./backend/gradlew -p backend flywayClean",
     "migrate:migrate": "./backend/gradlew -p backend flywayMigrate",
     "migrate:info": "./backend/gradlew -p backend flywayInfo"

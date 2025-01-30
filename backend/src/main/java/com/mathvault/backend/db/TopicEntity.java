@@ -1,4 +1,4 @@
-package com.mathvault.backend.course.infrastructure.entities;
+package com.mathvault.backend.db;
 
 import java.util.List;
 import java.util.UUID;
