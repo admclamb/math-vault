@@ -1,4 +1,19 @@
-<div class="border border-slate-600 p-5 rounded-lg">
-  <h1 class="text-3xl font-bold mb-3">{{ course.name }}</h1>
-  <p class="text-slate-400">{{ course.description }}</p>
+<div class="border border-slate-600 p-5 rounded-lg flex flex-col gap-5">
+  <div>
+    <h1 class="text-3xl font-bold mb-3">{{ course.name }}</h1>
+    <p class="text-slate-400">{{ course.description }}</p>
+  </div>
+  <app-course-tags [tags]="course.tags" class="mb-3" />
+  <ul>
+    <li>
+      <a
+        appButton
+        variant="default"
+        size="default"
+        [routerLink]="['/course', course.name, '/study']"
+        class="w-22"
+        >Study</a
+      >
+    </li>
+  </ul>
 </div>

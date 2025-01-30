@@ -1,0 +1,9 @@
+<ul class="flex items-center gap-3">
+  <li *ngFor="let tag of tags">
+    <a
+      [routerLink]="['/tags', tag.name]"
+      class="p-3 rounded hover:bg-slate-800 duration-200 transition-ease-out"
+      ><span class="text-blue-400 mr-1">#</span>{{ tag.name }}</a
+    >
+  </li>
+</ul>
