@@ -47,7 +47,7 @@ export class ButtonDirective implements OnChanges {
   private getVariantClass(): string {
     const variants = {
       default3D:
-        'bg-blue-600 hover:bg-blue-500 active:translate-y-0.5 shadow-[0px_5px_0px_0px_oklch(0.424_0.199_265.638)]',
+        'bg-blue-600 hover:bg-blue-500 active:translate-y-[5px] duration-150 ease-out shadow-[0px_5px_0px_0px_oklch(0.424_0.199_265.638)] active:shadow-[0px_0px_0px_0px_oklch(0.424_0.199_265.638)]',
       default: 'bg-blue-600 text-blue-100 shadow hover:bg-blue-500',
       destructive: 'bg-red-600 text-red-100 shadow-sm hover:bg-red-500',
       outline:
