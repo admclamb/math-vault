@@ -13,6 +13,7 @@ import {
 export class ButtonDirective implements OnChanges {
   @Input() variant:
     | 'default'
+    | 'default3D'
     | 'destructive'
     | 'outline'
     | 'secondary'
@@ -35,11 +36,18 @@ export class ButtonDirective implements OnChanges {
       this.getSizeClass(),
     ].join(' ');
 
-    this.renderer.setAttribute(this.el.nativeElement, 'class', classList);
+    const existingClasses = this.el.nativeElement.getAttribute('class') || '';
+    this.renderer.setAttribute(
+      this.el.nativeElement,
+      'class',
+      `${existingClasses} ${classList}`
+    );
   }
 
   private getVariantClass(): string {
     const variants = {
+      default3D:
+        'bg-blue-600 hover:bg-blue-500 active:translate-y-0.5 shadow-[0px_5px_0px_0px_oklch(0.424_0.199_265.638)]',
       default: 'bg-blue-600 text-blue-100 shadow hover:bg-blue-500',
       destructive: 'bg-red-600 text-red-100 shadow-sm hover:bg-red-500',
       outline:
